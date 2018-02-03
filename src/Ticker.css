@@ -1,0 +1,8 @@
+.ReactTable .rt-thead .rt-th {
+  padding: 10px 5px;
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+.ReactTable .rt-thead .rt-th:not(.-sort-desc) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}

@@ -1,0 +1,8 @@
+.orders .summary {
+  margin: 8px 0;
+  text-align: center;
+}
+
+.orders .ReactTable {
+  border-width: 1px 0 0 0;
+}
