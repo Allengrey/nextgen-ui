@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
 import Navbar from './components/app/Navbar';
+import OrderBook from './components/app/OrderBook';
 import WebsocketConnectingOverlay from './components/app/WebsocketConnectingOverlay';
 import { TICKER_UPDATE_INTERVAL } from './config';
 import { fetchTickerIfNeeded, fetchTokensListIfNeeded } from './store/actions';
@@ -42,6 +43,9 @@ class App extends Component {
       <div>
         <Navbar pairs={pairs} tickerLastUpdated={tickerLastUpdated} />
         <div id="content">
+        	
+        	<OrderBook token={token} />
+        
           <p>{websocket.status}</p>
           <p>
             {(tickerLastUpdated &&
